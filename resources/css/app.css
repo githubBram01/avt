@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Standaard Classes */
+
+/* Fonts */
+body{
+    font-family: 'Lexend', sans-serif;
+}
+
+/* Header / Navbar */
+
+.header-bkg{
+    background: #FAFAFA;
+    border-bottom: 10px solid #63B54E;
+}
+
+.header-bkg nav {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links{
+    background: #565656;
+}
+
+.nav-links .navbar-expand-lg .navbar-collapse {
+    justify-content: center;
+}
+
+.nav-links .navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 25px;
+    padding-left: 20px;
+    color: rgba(255,255,255,.5);
+}
+
+.nav-links .navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: rgb(255, 255, 255);
+}
+
+@media (min-width: 992px) {
+    .nav-links .responsive-text {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-links .navbar{
+        justify-content: space-between;
+    }
+    .nav-links .navbar-dark .navbar-toggler, .navbar-toggler:active, .navbar-toggler:focus{
+        border: none;
+        outline: none;
+    }
+    .nav-links .responsive-text {
+        color: rgba(255,255,255,.5);
+        font-size: 25px;
+    }
+}
+
+/* Logo */
+.avt-logo{
+    width: 90%;
+    max-width: 210px;
+    max-height: 70px;
+    height: auto;
+}
+
+/* Banner header */
+
+.img-bg-banner{
+    background-image: url('/img/bkgbanner.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 345px;
+}
+
+.img-bg-banner h1{
+    color: white;
+    text-align: center;
+    text-shadow: 0px 1px 9px rgb(0 0 0 / 63%);
+    padding-top: 8%;
+    margin: 0 20%;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 1500px) {
+    .img-bg-banner {
+        background-position: center !important;
+        background-attachment: unset !important;
+        height: 220px !important;
+    }
+    .img-bg-banner h1{
+        padding-top: 70px;
+        margin: 0;
+        font-size: 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 424px){
+    .img-bg-banner h1{
+        padding-top: 50px;
+        font-size: 28px;
+    }
+
+}
+
+@media screen and (min-width: 1500px) {
+    .img-bg-banner {
+        background-position: center !important;
+        background-attachment: unset !important;
+        height: 465px !important;
+    }
+}
+
+/* Main */
+
+/* Text Blocks */
+.text-block{
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.text-block h1{
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.block-green{
+    background: #63B54E;
+    color: white;
+}
+
+.block-img{
+    width: 40%;
+    margin: 0% 2%;
+}
+
+.column-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.block-grey{
+    background: #EDEDED;
+}
+
+
+/* Bedrijfsgegevens block */
+.company-info td {
+    overflow-wrap: break-word;
+    width: 55%;
+}
