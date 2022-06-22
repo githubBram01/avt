@@ -81,8 +81,14 @@
     @yield('content')
 </main>
 
-<footer class="text-center text-white footer" style="background-color: #caced1;">
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+<footer class="text-center text-white footer">
+    <div class="social-block mb-2">
+        <ul class="social-links">
+            <li><a href="https://www.facebook.com/pages/AVT-bv/253098341495977" target="_blank" rel="noopener"><img src="{{ env('APP_URL') }}/img/icon_f.png" alt="Facebook AVT" width="100" height="100"></a></li>
+            <li><a href="https://www.youtube.com/user/AVTbv" target="_blank" rel="noopener"><img src="{{ env('APP_URL') }}/img/icon_yt.png" alt="youtube AVT" width="100" height="100"></a></li>
+        </ul>
+    </div>
+    <div class="text-center px-5">
         © <?php echo date("Y"); ?> AVT B.V - <a href="https://www.grafisch-centrum.nl/">Grafisch Centrum</a>.
         {{--                <a class="text-white" href="https://github.com/curio-studenten/c3-web-c3-21-nj-team-c2">GitHub</a>--}}
     </div>
