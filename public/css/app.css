@@ -1908,7 +1908,9 @@ body{
 .nav-links .navbar-expand-lg .navbar-nav .nav-link:hover{
     color: rgb(255, 255, 255);
 }
-
+.navbar-toggler-icon.navbar-open{
+    background-image: url("/img/logo.png");
+}
 @media (min-width: 992px) {
     .nav-links .responsive-text {
         display: none;
@@ -1926,6 +1928,15 @@ body{
     .nav-links .responsive-text {
         color: rgba(255,255,255,.5);
         font-size: 25px;
+    }
+    .text-block{
+        flex-direction: column !important;
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+    }
+    .column-block p{
+        margin-bottom: 20px;
     }
 }
 
